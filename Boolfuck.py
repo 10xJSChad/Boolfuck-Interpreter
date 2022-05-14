@@ -12,7 +12,7 @@ class Boolfuck_Interpreter():
                 if counter == 0: 
                     return(i)
         else:
-            for i in range(index, 0, -1):
+            for i in range(index, -1, -1):
                 if code[i] == "[": counter -= 1
                 elif code[i] == "]": counter += 1
 
